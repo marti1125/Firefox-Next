@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Firefox</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/buttonize.min.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.epiclock.min.js"></script>
+		<script type="text/javascript" src="js/jquery.corners.js"></script>
+		<script src="http://connect.facebook.net/en_US/all.js"></script>
+		<script type="text/javascript">
+		
+			function framesetsize(w, h) {
+				var obj = new Object;
+				obj.width = w;
+				obj.height = h;
+				FB.Canvas.setSize(obj);
+			}
+
+
+			$(document).ready(function() {
+				$(".flip").click(function() {
+					$(".panel").slideToggle("slow");
+				});
+				jQuery('#text').epiclock({
+					mode : EC_COUNTDOWN,
+					format : 'V{<sup>dias</sup>} x{<sup>horas</sup>} i{<sup>minutos</sup>} s{<sup>segundos</sup>}',
+					target : 'June 05, 2012 00:00:00'
+				}).clocks(EC_RUN);
+				$('.rounded').corners('transparent');
+			});
+
+		</script>
+	</head>
+	<body onload="framesetsize(780,800)">
+		<div id="wrapper">
+			<div id="tab">
+				<a class="mozilla" href="http://www.mozilla.org/">visit <span>mozilla</span></a>
+			</div><br/>
+			<header>				
+				<h1>Firefox</h1>
+				<img src="img/identity-logo-firefox.png" height="216" width="200"  alt="firefox"/>
+				<br/>
+				<div id="cuadro2" class="rounded">
+					<div id="text" class="count_down"></div>
+				</div>
+				
+			</header>
+			<br/><br/><br/>
+			<div id="formulario">
+				<div id="botone">
+					<p>
+						&nbsp;
+					</p> 
+					<p>
+						<a class="button orange" id="ss" href="http://www.mozilla.org/es-ES/newsletter/" target="_blank">Suscríbete a nuestro boletín mensual</a>
+					</p>
+					<p>
+						&nbsp;
+					</p>
+					<p>
+						<a class="button orange" id="ss" href="https://www.mozilla.org/en-US/firefox/beta/" target="_blank">¿Impaciente? Ayúdanos a probar la beta</a>
+					</p>
+				</div>				
+			</div>
+			<footer>
+				<p>
+					
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>
