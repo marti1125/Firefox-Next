@@ -3,16 +3,12 @@
     src: url('OpenSans-Regular.ttf')  format('truetype');
 }
 
-body {
-	/*border-top: 2px solid #676767;*/
+body {	
 	background: #F5F1E7 url(../img/bg-sand.png) 0 0 repeat-x;
-	font-family: openSansRegular;
-	font-size: 16px;
+	font-family: openSansRegular;	
 	margin: 0;
 	padding: 0;
 	color: #222;
-	
-	/*border-top: 2px solid #676767;*/
 }
 header {
 	height: 305px;
@@ -20,17 +16,6 @@ header {
 	padding-top: 32px;
 	width: 780px;
 }
-/*a.mozilla {
-	position: relative;
-	float: right;
-	display: block;
-	height: 49px;
-	width: 118px;
-	background: url(../img/mozilla-tab.png) 100% 0 no-repeat;
-	text-indent: -200px;
-	overflow: hidden;
-	margin-right: 20px;
-}*/
 
 h1:first-of-type {
     font-family: 'openSansRegular', sans-serif;
@@ -63,49 +48,23 @@ input {
 	height: 150px;
 	padding: 10px;
 }
-#cuadro2 {
-	padding: 15px;
-	text-align: center;
-}
-.panel {
-	padding: 20px;
-	height: 70px;
-	display: none;
-}
-.flip {
-	margin: 0px;
-	padding: 5px;
-	text-align: center;
-	/*background: #CBF4FC;
-	border: solid 2px #c3c3c3;*/
-}
+
 #botone{
 	text-align: center;
 }
-#nc{
-	width:  60%;
-}
-#ss{
-	width:  59%;
-}
-.count_down {
- 
-	font-family: 'openSansRegular', sans-serif;
-    font-size: 35px;
-    letter-spacing: -2px;
+
+.count_down {	
+    font-size: 35px;    
     line-height: 100%;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
     color: rgb(72, 72, 72);
     font-weight: normal; 
-	padding-left: 25px;
+	padding-left: 15px;
 	
 }
 
 .count_down sup {
- word-spacing: 0.25em;
-	font-family: 'openSansRegular', sans-serif;
-    font-size: 28px;
-    letter-spacing: -2px;
+	 font-size: 15px;    
     line-height: 100%;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
     color: rgb(72, 72, 72);
@@ -128,7 +87,7 @@ a, a:link, a:visited {
     box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1), 0px -2px 0px 0px rgba(0, 0, 0, 0.2) inset;
     background-color: rgb(39, 97, 149);
     background-repeat: repeat-x;
-    background-image: -moz-linear-gradient(rgb(60, 136, 204), rgb(39, 97, 149));
+    background-image: -moz-linear-gradient(bottom, rgb(228,120,32) 5%, rgb(200,75,29) 95%);
     color: rgb(255, 255, 255);
     text-align: center;
     font-size: 14px;
